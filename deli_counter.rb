@@ -22,7 +22,8 @@ def line(array)
     end
     puts "#{message}"
   end
-  "potatoes"
+  return "ham"
+  puts "potatoes"
 end
 
 line(katz_deli)
