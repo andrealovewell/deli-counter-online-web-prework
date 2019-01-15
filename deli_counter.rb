@@ -49,5 +49,6 @@ def square(array)
 end
 
 num_array = [1,2,3]
+square(num_array)
 binding.pry
 puts "goodbye"
