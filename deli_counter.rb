@@ -39,15 +39,15 @@ end
 #deli_line = ["Andy", "Howard"]
 
 def square(array)
-  # using#each , square each value of the incoming array 
-  # then return the array 
+  # using#each , square each value of the incoming array
+  # then return the array
 
   array.each do |i|
     array.push(i*i)
     return array
   end
-end 
+end
 
+num_array = [1,2,3]
 binding.pry
 puts "goodbye"
-
