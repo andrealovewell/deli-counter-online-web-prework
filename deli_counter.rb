@@ -44,8 +44,8 @@ def square(array)
 
   array.each do |i|
     array.push(i*i)
-    return array
   end
+  array
 end
 
 num_array = [1,2,3]
