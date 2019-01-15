@@ -36,5 +36,6 @@ end
 
 now_serving(katz_deli)
 
-binding.pry 
+deli_line = ["Andy", "Howard"]
+binding.pry
 puts "goodbye"
