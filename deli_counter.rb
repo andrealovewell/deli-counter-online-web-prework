@@ -1,5 +1,5 @@
 require 'pry'
-katz_deli = []
+#katz_deli = []
 
 def take_a_number(array, name)
   array.push(name)
@@ -8,9 +8,9 @@ def take_a_number(array, name)
   # return name, position
 end
 
-take_a_number(katz_deli, "Grace")
-take_a_number(katz_deli, "Tom")
-take_a_number(katz_deli, "Alan")
+#take_a_number(katz_deli, "Grace")
+#take_a_number(katz_deli, "Tom")
+#take_a_number(katz_deli, "Alan")
 
 def line(array)
   if array.length == 0
@@ -24,7 +24,7 @@ def line(array)
   end
 end
 
-line(katz_deli)
+#line(katz_deli)
 
 def now_serving(array)
   if array.length == 0
@@ -34,8 +34,8 @@ def now_serving(array)
   end
 end
 
-now_serving(katz_deli)
+#now_serving(katz_deli)
 
-deli_line = ["Andy", "Howard"]
+#deli_line = ["Andy", "Howard"]
 #binding.pry
-puts "goodbye"
+#puts "goodbye"
