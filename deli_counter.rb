@@ -1,16 +1,16 @@
-require 'pry'
-#katz_deli = []
+
+katz_deli = []
 
 def take_a_number(array, name)
   array.push(name)
   position = array.index(name)
   puts "Welcome, #{name}. You are number #{array.index(name)+1} in line."
-  # return name, position
+   return name, position
 end
 
-#take_a_number(katz_deli, "Grace")
-#take_a_number(katz_deli, "Tom")
-#take_a_number(katz_deli, "Alan")
+take_a_number(katz_deli, "Grace")
+take_a_number(katz_deli, "Tom")
+take_a_number(katz_deli, "Alan")
 
 def line(array)
   if array.length == 0
@@ -24,7 +24,7 @@ def line(array)
   end
 end
 
-#line(katz_deli)
+line(katz_deli)
 
 def now_serving(array)
   if array.length == 0
@@ -34,21 +34,6 @@ def now_serving(array)
   end
 end
 
-#now_serving(katz_deli)
+now_serving(katz_deli)
 
-#deli_line = ["Andy", "Howard"]
 
-def square(array)
-  # using#each , square each value of the incoming array
-  # then return the array
-
-  array.each do |i|
-    array.push(i*i)
-  end
-  array
-end
-
-num_array = [1,2,3]
-square(num_array)
-binding.pry
-puts "goodbye"
