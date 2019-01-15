@@ -1,4 +1,4 @@
-#require 'pry'
+require 'pry'
 #katz_deli = []
 
 def take_a_number(array, name)
@@ -37,5 +37,17 @@ end
 #now_serving(katz_deli)
 
 #deli_line = ["Andy", "Howard"]
-#binding.pry
-#puts "goodbye"
+
+def square(array)
+  # using#each , square each value of the incoming array 
+  # then return the array 
+
+  array.each do |i|
+    array.push(i*i)
+    return array
+  end
+end 
+
+binding.pry
+puts "goodbye"
+
