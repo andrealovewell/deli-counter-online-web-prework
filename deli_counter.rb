@@ -1,4 +1,5 @@
-#katz_deli = []
+require 'pry'
+katz_deli = []
 
 def take_a_number(array, name)
   array.push(name)
@@ -16,23 +17,24 @@ def line(array)
     puts "The line is currently empty."
   else
     message = "The line is currently:"
-
-  array.each_with_index do |value, index|
-    message += " #{index.to_i+1}. #{value}"
-  end
+    array.each_with_index do |name, index|
+      message += " #{index.to_i+1}. #{name}"
+    end
   puts "#{message}"
   end
 end
 
 line(katz_deli)
 
-
 def now_serving(array)
-  if array.empty? == true
+  if array.length == 0
     puts "There is nobody waiting to be served!"
-  elsif array.empty? == false
+  else
     puts "Currently serving #{array.shift}."
   end
 end
 
 now_serving(katz_deli)
+
+binding.pry 
+puts "goodbye"
